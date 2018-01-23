@@ -15,7 +15,10 @@
 */
 
 //Code here
-
+let me = {
+  name: "Brandon",
+  age:30
+};
 
 
 ////////// PROBLEM 2 //////////
@@ -26,15 +29,22 @@
 */
 
 //Code here
-
-
+let favoriteThings = {
+  band: "Phoenix Mourning",
+  food: "BBQ",
+  person: "myself",
+  book: "This Is Where I Leave You",
+  movie: "Back To The Future 2",
+  holiday: "Christmas"
+};
 
 /*
   After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 */
 
 //Code here
-
+favoriteThings.car = "Honda Civic";
+favoriteThings.brand = "None";
 
 
 /*
@@ -42,7 +52,8 @@
 */
 
 //Code here
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -56,7 +67,10 @@
 */
 
 //Code here
-
+let backPack = {};
+let item = "firstPocket";
+backPack[item] = "chapstick";
+backPack.color = "Grey";
 
 
 /*
@@ -64,7 +78,7 @@
 */
 
 //Code here
-
+alert(backPack);
 
 
 /*
@@ -74,7 +88,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +111,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -110,7 +125,7 @@ var user2 = {
 
 //Code Here
 
-
+let methodCollection = {};
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
@@ -118,7 +133,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello = function(){ alert("hello")};
+methodCollection.logHello = function(){console.log("hello")};
 
 
 /*
@@ -126,7 +142,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -137,7 +154,17 @@ var user2 = {
 */
 
 //Code Here
+function makePerson(name,birthday,ssn){
+  let makePeople = {
+    name,
+    birthday,
+    ssn,
+  };
 
+  return makePeople;
+}
+
+console.log(makePerson(1,2,3));
 
 
 ////////// PROBLEM 7 //////////
@@ -148,5 +175,12 @@ var user2 = {
 */
 
 //Code Here
+function makeCard(cardNumber,expirationDate,securityCode){
+  let cc = {
+    cardNumber,
+    expirationDate,
+    securityCode
+  };
 
-
+  return cc;
+}
